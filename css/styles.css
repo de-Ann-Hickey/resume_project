@@ -1,0 +1,89 @@
+body   {
+    background-image: linear-gradient(135deg, rgb(22, 76, 115), 
+                        rgba(247, 56, 56, 0.812), 
+                        rgb(124, 206, 229)) !important;
+    font-family: 'Baumans' !important;
+}
+h1, h2  {
+    font-family: 'Righteous';
+}
+.contact    {
+    display:flex;
+    justify-content: space-between;
+}
+.contact-img    {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.btn    {
+    border-radius: 2em;
+}
+.btn a  {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+.summary    {
+    font-size: 1.3em;
+}
+.w3-row-padding {
+    overflow: hidden;
+}
+.w3-card-3, .w3-card-4 {
+    padding-bottom: 99999px;
+    margin-bottom: -99999px;
+}
+ul li {
+    font-family: 'Baumans';
+}
+h1  {
+    font-size: 3em;
+}
+.edu p, h6 {
+    font-size: 80%;
+    margin: 0;
+}
+ul li, p:not(p.w3-medium)   {
+    font-weight: lighter !important;
+}
+h5, p.skills    {
+    font-family: 'Orbitron';
+}
+p.skills.w3-margin-left    {
+    letter-spacing: .2em;
+    margin-bottom: 0 !important;
+}
+div.w3-light-grey.w3-round-xlarge.w3-small.w3-margin {
+    margin-top: 0 !important;
+}
+.w3-text-black h5   {
+    font-size: 80%;
+    font-weight: 200;
+    letter-spacing: .2em;
+}
+.w3-display-container   {
+    min-height: 5em !important;
+    background-image: linear-gradient(-225deg, rgb(39, 230, 255), teal,rgb(10, 25, 75));
+}
+@media screen and (max-width:1024px) {
+    h1              {font-size: 2em;text-align: center;}
+    .w3-twothird    {height: 63.5em !important;}
+    .w3-third      {height: auto !important;}
+    .contact,
+    .contact-text,
+    .contact-img    {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .contact-img img    {width: 30%;}
+    .contact h5 i       {display: none;}
+}
+@media screen and (max-width:960px) {
+    .w3-twothird    {height: unset !important;}
+    .w3-card-4      {height: auto !important;}
+    .edu p, h6      {font-size: 100%;}
+}
