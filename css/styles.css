@@ -13,17 +13,17 @@ h1, h2  {
 }
 .contact-img    {
     width: 25%;
-    display: flex;
-    flex-direction: column;
 }
-.btn    {
-    border-radius: 2em;
+.w3-button    {
+    padding: 1%;
+    width: 49%;
 }
-.btn a  {
+.w3-button a  {
     text-decoration: none;
 }
 img {
     width: 100%;
+    padding-top: 4.8em;
 }
 .summary    {
     font-size: 1.3em;
@@ -79,8 +79,10 @@ div.w3-light-grey.w3-round-xlarge.w3-small.w3-margin {
         text-align: center;
         padding: 0;
     }
-    .contact-img img    {width: 30%;}
+    .contact-text p button    {line-height: .5em !important;}
+    .contact-img img    {width: 35%;padding-top: 0;}
     .contact h5 i       {display: none;}
+    .w3-button          {width: unset;}
 }
 @media screen and (max-width:960px) {
     .w3-twothird    {height: unset !important;}
