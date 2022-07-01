@@ -28,3 +28,16 @@ function newFortune() {
     var randomNumber = Math.floor(Math.random() * (fortunes.length));
     document.getElementById('fortune').innerHTML = fortunes[randomNumber];
 }
+
+let xhr = new XMLHttpRequest();
+xhr.open("POST", "https://ncz1smahrd.execute-api.us-west-1.amazonaws.com/undefined/");
+
+xhr.setRequestHeader("Accept", "application/json");
+xhr.setRequestHeader("Content-Type", "application/json");
+xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+xhr.setRequestHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+xhr.setRequestHeader("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Requested-With");
+
+xhr.onload = () => console.log(xhr.responseText);
+
+xhr.send();
