@@ -30,7 +30,7 @@ function newFortune() {
 }
 
 let xhr = new XMLHttpRequest();
-xhr.open("POST", "https://ncz1smahrd.execute-api.us-west-1.amazonaws.com/undefined/");
+xhr.open("POST", "https://ncz1smahrd.execute-api.us-west-1.amazonaws.com/final/");
 
 xhr.setRequestHeader("Accept", "application/json");
 xhr.setRequestHeader("Content-Type", "application/json");
