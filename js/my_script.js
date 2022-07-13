@@ -30,14 +30,13 @@ function newFortune() {
 }
 
 let xhr = new XMLHttpRequest();
-xhr.open("POST", "https://ncz1smahrd.execute-api.us-west-1.amazonaws.com/final/");
+xhr.open("POST", "https://ncz1smahrd.execute-api.us-west-1.amazonaws.com/final");
 
 xhr.setRequestHeader("Accept", "application/json");
 xhr.setRequestHeader("Content-Type", "application/json");
 xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
 xhr.setRequestHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
-xhr.setRequestHeader("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Requested-With");
-
-xhr.onload = () => console.log(xhr.responseText);
-
+xhr.setRequestHeadxer("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Requested-With");
 xhr.send();
+xhr.onload = () => console.log(JSON.parse(xhr.response));
+
