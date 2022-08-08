@@ -29,6 +29,9 @@ h1, h2, h3  {
     width: 30%;
     border: solid 1px teal;
 }
+#counter, #counter_text {
+    text-align: center;
+}
 .summary    {
     font-size: 1.3em;
 }

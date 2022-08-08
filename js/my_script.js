@@ -31,17 +31,12 @@ function newFortune() {
 
 axios.post("https://ncz1smahrd.execute-api.us-west-1.amazonaws.com/final/")
 .then(response =>{
-    console.log(response.data)
+    console.log(response.data.Attributes.sequence_number.N)
+    var newNumber = response.data.Attributes.sequence_number.N
+    document.getElementById("counter").innerHTML = newNumber;
 })
 
-// let xhr = new XMLHttpRequest();
-// xhr.open("POST", "https://ncz1smahrd.execute-api.us-west-1.amazonaws.com/final/");
 
-// // xhr.setRequestHeader("Accept", "application/json");
-// // xhr.setRequestHeader("Content-Type", "application/json");
-// xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
-// // xhr.setRequestHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
-// // xhr.setRequestHeader("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Requested-With");
-// xhr.send();
-// xhr.onload = () => console.log(JSON.parse(xhr.response));
+
+
 
