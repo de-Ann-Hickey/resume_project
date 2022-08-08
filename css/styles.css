@@ -74,12 +74,7 @@ div.w3-light-grey.w3-round-xlarge.w3-small.w3-margin {
     text-align: center;
     font-size: 90%;
     margin: 0;
-    min-height: fit-content;
-}
-counter#h5 {
-    text-align: center !important;
-    min-height: fit-content;
-
+    min-height: 90%;
 }
 @media screen and (max-width:1024px) {
     h1              {font-size: 2em;text-align: center;}
