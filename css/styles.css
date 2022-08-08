@@ -29,9 +29,6 @@ h1, h2, h3  {
     width: 30%;
     border: solid 1px teal;
 }
-#counter, #counter_text {
-    text-align: center;
-}
 .summary    {
     font-size: 1.3em;
 }
@@ -72,6 +69,17 @@ div.w3-light-grey.w3-round-xlarge.w3-small.w3-margin {
 }
 .w3-display-container   {
     background-image: linear-gradient(-225deg, rgb(39, 230, 255), teal,rgb(10, 25, 75));
+}
+#counter_text h5, h5#counter {
+    text-align: center;
+    font-size: 90%;
+    margin: 0;
+    min-height: fit-content;
+}
+counter#h5 {
+    text-align: center !important;
+    min-height: fit-content;
+
 }
 @media screen and (max-width:1024px) {
     h1              {font-size: 2em;text-align: center;}
