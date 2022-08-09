@@ -31,7 +31,7 @@ function newFortune() {
 
 axios.post("https://ncz1smahrd.execute-api.us-west-1.amazonaws.com/final/")
 .then(response =>{
-    console.log(response.data.Attributes.sequence_number.N)
+    console.log(response.data)
     var newNumber = response.data.Attributes.sequence_number.N
     document.getElementById("counter").innerHTML = newNumber;
 })
